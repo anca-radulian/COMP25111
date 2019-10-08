@@ -1,0 +1,82 @@
+Output for "synchronisation.c":
+
+Hello from ./synchronisation with PID 9451 whose parent is 9243
+I am 9452, child 0 of 9451
+
+Goodbye from child 0 with PID 9452
+I am 9453, child 1 of 9451
+I am 9456, child 4 of 9451
+I am 9454, child 2 of 9451
+I am 9457, child 5 of 9451
+I am 9458, child 6 of 9451
+[9451]: I now have 10 children:
+I am 9455, child 3 of 9451
+I am 9459, child 7 of 9451
+I am 9461, child 9 of 9451
+   9452
+I am 9460, child 8 of 9451
+   9453
+   9454
+   9455
+   9456
+   9457
+   9458
+   9459
+   9460
+   9461
+
+[9451]: Child 0 (PID 9452) has exited normally.
+
+Goodbye from child 1 with PID 9453
+
+[9451]: Child 1 (PID 9453) has exited normally.
+
+Goodbye from child 2 with PID 9454
+
+[9451]: Child 2 (PID 9454) has exited normally.
+
+Goodbye from child 3 with PID 9455
+
+[9451]: Child 3 (PID 9455) has exited normally.
+
+Goodbye from child 4 with PID 9456
+
+[9451]: Child 4 (PID 9456) has exited normally.
+
+Goodbye from child 5 with PID 9457
+
+[9451]: Child 5 (PID 9457) has exited normally.
+
+Goodbye from child 6 with PID 9458
+
+[9451]: Child 6 (PID 9458) has exited normally.
+
+Goodbye from child 7 with PID 9459
+
+[9451]: Child 7 (PID 9459) has exited normally.
+
+Goodbye from child 8 with PID 9460
+
+[9451]: Child 8 (PID 9460) has exited normally.
+
+Goodbye from child 9 with PID 9461
+
+[9451]: Child 9 (PID 9461) has exited normally.
+
+[9451]: Goodbye from parent process.
+
+
+
+Output for "prolicide.c":
+
+Hello from ./prolicide with PID 9425 whose parent is 9243
+I now have a child 9426
+I am 9426, child of 9425
+Signal to child 9426.
+
+Prolicide!!
+
+Child 9426 has exited badly.
+
+Goodbye from ./prolicide with PID 9425
+

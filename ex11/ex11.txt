@@ -1,0 +1,22 @@
+//---------- Stage 0 ----------------------
+all three dinners will have the same sleep
+
+we will use it to k know if the fork is picked first or second
+
+they are put in reverse order so that will not be swapped
+
+//--------- Stage 1 -----------------------
+as the actions are made in the same time the diners will be in deadlock When
+they try to pick up the forks because they are 'used' by another one.
+
+//--------- Stage 2 ----------------------
+the first fork is synchronised but after that if a diner tries to pick up the fork
+it will be unable to know if it succeeded to pick it up
+
+//--------- Stage 3 ----------------------
+the dinners will synchronize the way they pick up their forks but the deadlock risk
+is still present.
+
+//--------- Stage 4 ----------------------
+the deadlock is avoided as the last diner takes the fork from its right when available
+and the rest of the diners will take their left ones.

@@ -1,0 +1,5 @@
+First question:
+- If you don't allocate enough space for the string it doesn't happen anything because it can overwrite other data in the memory. The same for overflow.
+
+Second question:
+- The memory remains blocked with that data and it cannnot be accesed anymore.

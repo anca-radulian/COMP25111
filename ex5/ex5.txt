@@ -1,0 +1,41 @@
+Output from running processes.c
+
+Hello from ./processes!
+My PID is 13765
+That call returned the value 13766 to process 13765
+Goodbye from ./processes with PID 13765
+That call returned the value 0 to process 13766
+Goodbye from ./processes with PID 13766
+
+Output from running processes.c after deleting the comment.
+
+Hello from ./processes!
+My PID is 15859
+That call returned the value 15860 to process 15859
+Goodbye from ./processes with PID 15859
+That call returned the value 0 to process 15860
+
+***************************
+*  A different programme  *
+***************************
+
+Hello from baby!
+My PID is 15860
+Goodbye from baby with PID 15860
+
+Output from running orphan.c.
+
+Hello from ./orphan!
+Parent process 16180 run by process 13178
+Child  process 16181 parent is 16180
+Parent terminating 16180
+[mbaxaar2@e-c07kilf3164 orphan]$ Orphaned Child 16181 adopted by process 1
+Orphan terminating 16181
+
+Output from running zombie.c.
+
+Hello from ./zombie!
+Parent process will have a sleep ...
+Child process  16326 parent is 16325
+Child exiting now; will be a zombie for a few seconds
+Parent terminating; O.S. will clean up.

@@ -1,0 +1,10 @@
+5 arguments supplied
+Argument pointer array: 000000001F350408
+The size of argv: 0000000000000008
+First argument string is: ./arguments
+  Pointer  0 at address 000000001F350408 is 000000001F35202C to string "./arguments".
+  Pointer  1 at address 000000001F350410 is 000000001F352038 to string "hello".
+  Pointer  2 at address 000000001F350418 is 000000001F35203E to string "christmas".
+  Pointer  3 at address 000000001F350420 is 000000001F352048 to string "santa".
+  Pointer  4 at address 000000001F350428 is 000000001F35204E to string "claus".
+

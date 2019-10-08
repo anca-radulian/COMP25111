@@ -1,0 +1,19 @@
+I modified the value of "p_shm" to be equal to 0 in the receive.c file as it is
+shared with the send.c one where there is needed a value different to 1
+so the program will print a check message and end. I order to give receive.c
+enough time to change the value, I used in send.c an sleep(2) method.
+
+Changes in the receive.c file
+
+p_shm[0] = 0;
+release_shm(p_shm);		   	// Free shared memory
+destroy_shm(shm_id);			// ... and destroy it
+exit(0);
+
+Changes in the receive.c file
+
+while (p_shm[0] == 1) sleep(2) ;		// Wait
+printf("Send: message received.\n");
+
+  release_shm(p_shm);			// Free shared memory
+  }

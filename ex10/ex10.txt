@@ -1,0 +1,40 @@
+the program recieve two parameters, a file to be printed and a directory in which 
+the file to be printed. the program checks for the arguments and return a
+specific message if the argument for the directory does not represent an directory
+or if it does not exist. If everithing is ok, a new file will be created, the path for it 
+being accessed using the dirent.h library.
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <dirent.h>
+#include <sys/stat.h>
+
+//main
+int main (int argc, char *argv[])
+{
+  char* file = argv[1];
+  char* dir = argv[2];
+
+  struct stat where;
+  if(stat(dir, &where) == 0)
+  {
+    DIR* openedDir = opendir(directoryName);
+    if (dir);
+    {
+      char * path[100];
+      strcat(path, directoryName);
+      strcat(path, "/");
+      strcat(path, givenFile);
+      FILE *theFile = fopen(path, "w+");
+
+      fclose(file);
+      closedir(dir);
+    }
+    else
+      printf("the specified `directory’ exists, but is not a directory");
+  }
+  else
+    printf("The specified directory does not exist");
+
+  return(0);
+} // main
